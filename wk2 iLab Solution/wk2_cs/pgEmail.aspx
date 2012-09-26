@@ -1,4 +1,4 @@
-<%@ Page Language="VB" AutoEventWireup="false" CodeFile="pgEmail.aspx.vb" Inherits="pgEmail" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="pgEmail.aspx.cs" Inherits="pgEmail" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -22,7 +22,7 @@
         <br />
         <asp:TextBox ID="txtMessage" runat="server" Height="202px" TextMode="MultiLine" Width="442px"></asp:TextBox>
         <br />
-        <asp:Button ID="btnSend" runat="server" Text="Send" /></div>
+        <asp:Button ID="btnSend" runat="server"  OnClick="btnSend_Click"  Text="Send" /></div>
     </form>
 </body>
 </html>
